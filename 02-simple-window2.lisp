@@ -7,8 +7,8 @@
 (defun main ()
   ;; GTK+3を初期化し、メインループに入る
   (gtk:within-main-loop
-    ;; タイトルとデフォルトの幅・高さを持つトップレベルウィンドウを作成
-    (let ((window (make-instance 'gtk:gtk-window
+    (let (;; タイトルとデフォルトの幅・高さを持つトップレベルウィンドウを作成
+          (window (make-instance 'gtk:gtk-window
                                  :type  :toplevel
                                  :title "Hello, world!"
                                  :default-width  640
