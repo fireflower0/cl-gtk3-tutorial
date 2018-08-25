@@ -4,6 +4,8 @@
 
 ![01](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/01.png)
 
+※ デフォルトでは 200 x 200 pixel サイズのウィンドウ
+
 ## 02 シンプルウィンドウ2
 
 ![02](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/02.png)
@@ -15,3 +17,9 @@
 ## 04 ボタン2
 
 ![04](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/04.png)
+
+## 05 ボタン3
+
+![05](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/05.png)
+
+※ ソースコードを改良しただけなので、見た目は変化なし
