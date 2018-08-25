@@ -27,3 +27,7 @@
 ## 06 お絵かき
 
 ![06](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/06.png)
+
+## 07 パッキングボックス
+
+![07](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/07.png)
