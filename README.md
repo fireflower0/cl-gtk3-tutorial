@@ -23,3 +23,7 @@
 ![05](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/05.png)
 
 ※ ソースコードを改良しただけなので、見た目は変化なし
+
+## 06 お絵かき
+
+![06](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/06.png)
