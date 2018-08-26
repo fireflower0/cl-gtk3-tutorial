@@ -31,3 +31,7 @@
 ## 07 パッキングボックス
 
 ![07](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/07.png)
+
+## 08 テーブルを使用したパッキング
+
+![08](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/08.png)
