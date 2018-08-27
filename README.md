@@ -35,3 +35,7 @@
 ## 08 テーブルを使用したパッキング
 
 ![08](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/08.png)
+
+## 09 テーブルを使用したパッキング2
+
+![09](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/09.png)
