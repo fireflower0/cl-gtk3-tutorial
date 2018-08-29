@@ -47,3 +47,7 @@
 ## 11 グリッドを使用したパッキング2
 
 ![11](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/11.png)
+
+## 12 画像とラベルが付いたボタン
+
+![12](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/12.png)
