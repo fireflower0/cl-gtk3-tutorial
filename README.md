@@ -59,3 +59,7 @@
 ## 14 チェックボタンとラジオボタン
 
 ![14](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/14.png)
+
+## 15 リンクボタン
+
+![15](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/15.png)
