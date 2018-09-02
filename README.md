@@ -71,3 +71,7 @@
 ## 17 色んなラベル
 
 ![17](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/17.png)
+
+## 18 色んなラベル2
+
+![18](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/18.png)
