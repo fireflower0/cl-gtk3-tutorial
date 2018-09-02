@@ -67,3 +67,7 @@
 ## 16 スイッチ
 
 ![16](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/16.png)
+
+## 17 色んなラベル
+
+![17](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/17.png)
