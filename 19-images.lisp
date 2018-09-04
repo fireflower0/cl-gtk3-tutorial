@@ -23,7 +23,7 @@
             (gdk-pixbuf:gdk-pixbuf-loader-write *pixbuf-loader* buffer 512)))
       (progn
         ;; イメージストリームとGdkPixbufLoaderを作成
-        (setf *image-stream* (open "alphatest.png" :element-type '(unsigned-byte 8)))
+        (setf *image-stream* (open "Material/pic/alphatest.png" :element-type '(unsigned-byte 8)))
         (when *pixbuf-loader*
           (gdk-pixbuf:gdk-pixbuf-loader-close *pixbuf-loader*)
           (setf *pixbuf-loader* nil))
@@ -36,12 +36,6 @@
         (gobject:g-signal-connect *pixbuf-loader* "area-updated"
                                   (lambda (loader x y width height)
                                     (declare (ignore loader x y width height))
-                                    ;; GtkImageの内部のpixbufは変更されていますが、
-                                    ;; 画像そのものは変更されていません。 再描画をキューに入れます。
-                                    ;; 実際に効率的にしたい場合は、GtkImageの代わりに描画領域などを
-                                    ;; 使うことができるので、画像上のPixbufの正確な位置を制御できる
-                                    ;; ので、画像の更新された領域だけ描画をキューに入れることが
-                                    ;; できます。
                                     (gtk:gtk-widget-queue-draw image)))))
   ;; GSourceを続行する
   glib:+g-source-continue+)
@@ -119,6 +113,36 @@
         (gtk:gtk-container-add vgrid frame))
 
       ;; プログレッシブ
+      (let* ((label     (make-instance 'gtk:gtk-label
+                                       :margin-top 9
+                                       :margin-bottom 6
+                                       :use-markup t
+                                       :label "<b>Progressive image loading</b>"))
+             (frame     (make-instance 'gtk:gtk-frame
+                                       :shadow-type :in))
+             (event-box (make-instance 'gtk:gtk-event-box))
+             (image     (gtk:gtk-image-new-from-pixbuf nil)))
+
+        (setf *load-timeout*
+              (gdk:gdk-threads-add-timeout 100
+                                           (lambda ()
+                                             (progressive-timeout image))))
+
+        ;; ファイルからのイメージの読み込みを再開する
+        (gobject:g-signal-connect event-box "button-press-event"
+                                  (lambda (event-box event)
+                                    (format t "Event Box ~A clicked at (~A, ~A)~%"
+                                            event-box
+                                            (gdk:gdk-event-button-x event)
+                                            (gdk:gdk-event-button-y event))
+                                    (setf *load-timeout*
+                                          (gdk:gdk-threads-add-timeout 100
+                                                                       (lambda ()
+                                                                         (progressive-timeout image))))))
+        (gtk:gtk-container-add vgrid label)
+        (gtk:gtk-container-add event-box image)
+        (gtk:gtk-container-add frame event-box)
+        (gtk:gtk-container-add vgrid frame))
 
       ;; 感度制御
       (let ((button (make-instance 'gtk:gtk-toggle-button
