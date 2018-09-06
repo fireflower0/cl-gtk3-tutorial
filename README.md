@@ -83,3 +83,7 @@
 ## 20 プログレスバー
 
 ![20](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/20.png)
+
+## 21 ステータスバー
+
+![21](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/21.png)
