@@ -87,3 +87,7 @@
 ## 21 ステータスバー
 
 ![21](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/21.png)
+
+## 22 情報バー
+
+![22](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/22.png)
