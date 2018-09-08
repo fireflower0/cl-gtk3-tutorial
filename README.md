@@ -91,3 +91,7 @@
 ## 22 情報バー
 
 ![22](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/22.png)
+
+## 23 範囲ウィジェット
+
+![23](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/23.png)
