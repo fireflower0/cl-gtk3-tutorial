@@ -95,3 +95,7 @@
 ## 23 範囲ウィジェット
 
 ![23](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/23.png)
+
+## 24 アライメントウィジェット
+
+![24](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/24.png)
