@@ -99,3 +99,7 @@
 ## 24 アライメントウィジェット
 
 ![24](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/24.png)
+
+## 25 固定コンテナ
+
+![25](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/25.png)
