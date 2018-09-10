@@ -103,3 +103,7 @@
 ## 25 固定コンテナ
 
 ![25](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/25.png)
+
+## 26 フレーム
+
+![26](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/26.png)
