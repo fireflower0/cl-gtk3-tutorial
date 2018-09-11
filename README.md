@@ -107,3 +107,7 @@
 ## 26 フレーム
 
 ![26](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/26.png)
+
+## 27 アスペクトフレームコンテナ
+
+![27](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/27.png)
