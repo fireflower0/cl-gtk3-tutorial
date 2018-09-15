@@ -111,3 +111,7 @@
 ## 27 アスペクトフレームコンテナ
 
 ![27](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/27.png)
+
+## 28 パンウィンドウウィジェット
+
+![28](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/28.png)

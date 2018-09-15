@@ -7,7 +7,7 @@
   (gtk:within-main-loop
    (let ((window (make-instance 'gtk:gtk-window
                                 :type :toplevel
-                                :title "Example Paned Window"
+                                :title "Paned Window"
                                 :border-width 12))
          (paned  (make-instance 'gtk:gtk-paned
                                 :orientation :vertical))
