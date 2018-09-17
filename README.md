@@ -123,3 +123,7 @@
 ## 30 ボタンボックス
 
 ![30](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/30.png)
+
+## 31 ノートブック
+
+![31](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/31.png)
