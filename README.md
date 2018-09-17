@@ -119,3 +119,7 @@
 ## 29 スクロールウィンドウ
 
 ![29](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/29.png)
+
+## 30 ボタンボックス
+
+![30](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/30.png)
