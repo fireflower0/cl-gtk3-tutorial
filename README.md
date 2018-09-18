@@ -127,3 +127,7 @@
 ## 31 ノートブック
 
 ![31](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/31.png)
+
+## 32 シンプルな複数行のテキストウィジェット
+
+![32](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/32.png)
