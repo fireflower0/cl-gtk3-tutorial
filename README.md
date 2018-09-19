@@ -131,3 +131,7 @@
 ## 32 シンプルな複数行のテキストウィジェット
 
 ![32](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/32.png)
+
+## 33 テキストビューのテキスト属性の変更
+
+![33](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/33.png)
