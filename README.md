@@ -135,3 +135,7 @@
 ## 33 テキストビューのテキスト属性の変更
 
 ![33](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/33.png)
+
+## 34 タグの適用
+
+![34](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/34.png)
