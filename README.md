@@ -139,3 +139,7 @@
 ## 34 タグの適用
 
 ![34](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/34.png)
+
+## 35 テキストビューでテキストを検索
+
+![35](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/35.png)
