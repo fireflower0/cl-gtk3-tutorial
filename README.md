@@ -143,3 +143,7 @@
 ## 35 テキストビューでテキストを検索
 
 ![35](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/35.png)
+
+## 36 テキストビューでテキストを検索2
+
+![36](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/36.png)
