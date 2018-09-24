@@ -147,3 +147,7 @@
 ## 36 テキストビューでテキストを検索2
 
 ![36](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/36.png)
+
+## 37 テキストの読み込みと変更
+
+![37](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/37.png)
