@@ -155,3 +155,6 @@
 ## 38 テキストの読み込みと変更2
 
 ![38](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/38.png)
+
+## 39 画像挿入
+![39](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/39.png)
