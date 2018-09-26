@@ -158,3 +158,6 @@
 
 ## 39 画像挿入
 ![39](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/39.png)
+
+## 40 ウィジェット挿入
+![40](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/40.png)
