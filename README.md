@@ -164,3 +164,6 @@
 
 ## 41 ツールチップをテキストビューで表示
 ![41](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/41.png)
+
+## 42 ツリービュー
+![42](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/42.png)
