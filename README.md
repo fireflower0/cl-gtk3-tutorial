@@ -167,3 +167,6 @@
 
 ## 42 ツリービュー
 ![42](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/42.png)
+
+## 43 永続的なセルレンダラーのプロパティ
+![43](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/43.png)
