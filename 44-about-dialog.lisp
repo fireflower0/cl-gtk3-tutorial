@@ -26,7 +26,26 @@
 
 (defun create-message-dialog ())
 
-(defun create-about-dialog ())
+(defun create-about-dialog ()
+  (let ((dialog (make-instance 'gtk:gtk-about-dialog
+                               :program-name "Example Dialog"
+                               :version "0.00"
+                               :copyright "(c) Dieter Kaiser"
+                               :website
+                               "github.com/crategus/cl-cffi-gtk"
+                               :website-label "Project web site"
+                               :license (license-text)
+                               :authors '("Kalyanov Dmitry"
+                                          "Dieter Kaiser")
+                               :documenters '("Dieter Kaiser")
+                               :artists '("None")
+                               :logo-icon-name
+                               "applications-development"
+                               :wrap-license t)))
+    ;; Run the about dialog
+    (gtk:gtk-dialog-run dialog)
+    ;; Destroy the about dialog
+    (gtk:gtk-widget-destroy dialog)))
 
 (defun main ()
   (gtk:within-main-loop
