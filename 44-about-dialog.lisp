@@ -22,9 +22,62 @@
           <http://www.gnu.org/licenses/> and ~
           <http://opensource.franz.com/preamble.html>."))
 
-(defun create-dialog ())
+(defun create-dialog ()
+  (let ((dialog (make-instance 'gtk:gtk-dialog
+                               :title "Dialog Window"
+                               :has-separator t)))
+    
+    ;; コンテンツ領域のvboxにボーダー幅を追加する
+    (setf (gtk:gtk-container-border-width (gtk:gtk-dialog-get-content-area dialog)) 12)
+    
+    ;; コンテンツエリアにテキスト付きのラベルウィジェットを追加する
+    (let ((vbox  (make-instance 'gtk:gtk-vbox :border-width 12))
+          (label (make-instance 'gtk:gtk-label
+                                :wrap t
+                                :label
+                                (format nil
+                                        "The content area is the place to ~
+                                         put in the widgets.~%~% ~
+                                         The action area is separated from ~
+                                         the content area with a horizontal ~
+                                         line."))))
+      
+      (gtk:gtk-box-pack-start vbox label)
+      (gtk:gtk-box-pack-start (gtk:gtk-dialog-get-content-area dialog) vbox)
 
-(defun create-message-dialog ())
+      ;; ダイアログのコンテンツ領域を表示する
+      (gtk:gtk-widget-show-all (gtk:gtk-dialog-get-content-area dialog)))
+    
+    ;; ストックIDを持つボタンをアクション領域に追加する
+    (gtk:gtk-dialog-add-button dialog "gtk-yes" :yes)
+    (gtk:gtk-dialog-add-button dialog "gtk-no" :no)
+    (gtk:gtk-dialog-add-button dialog "gtk-cancel" :cancel)
+    (gtk:gtk-dialog-set-default-response dialog :cancel)
+    
+    ;; ボタンの順序を変更する
+    (gtk:gtk-dialog-set-alternative-button-order dialog (list :yes :cancel :no))
+    
+    ;; ダイアログを実行し、コンソールにメッセージを表示する
+    (format t "Response was: ~S~%" (gtk:gtk-dialog-run dialog))
+    
+    ;; ダイアログを破棄する
+    (gtk:gtk-widget-destroy dialog)))
+
+(defun create-message-dialog ()
+  (let ((dialog (make-instance 'gtk:gtk-message-dialog
+                               :message-type :info
+                               :buttons :ok
+                               :text "Info Message Dialog"
+                               :secondary-text
+                               (format nil
+                                       "This is a message dialog of type ~
+                                        :info with a secondary text."))))
+    
+    ;; メッセージダイアログを実行する
+    (gtk:gtk-dialog-run dialog)
+    
+    ;; メッセージダイアログを破棄する
+    (gtk:gtk-widget-destroy dialog)))
 
 (defun create-about-dialog ()
   (let ((dialog (make-instance 'gtk:gtk-about-dialog
@@ -42,9 +95,11 @@
                                :logo-icon-name
                                "applications-development"
                                :wrap-license t)))
-    ;; Run the about dialog
+    
+    ;; aboutダイアログを実行する
     (gtk:gtk-dialog-run dialog)
-    ;; Destroy the about dialog
+    
+    ;; ダイアログの破棄
     (gtk:gtk-widget-destroy dialog)))
 
 (defun main ()
