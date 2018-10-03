@@ -170,3 +170,6 @@
 
 ## 43 永続的なセルレンダラーのプロパティ
 ![43](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/43.png)
+
+## 44 ダイアログ
+![44](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/44.png)
