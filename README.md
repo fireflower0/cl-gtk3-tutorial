@@ -173,3 +173,6 @@
 
 ## 44 ダイアログ
 ![44](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/44.png)
+
+## 45 カラーボタン
+![45](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/45.png)
