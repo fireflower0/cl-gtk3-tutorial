@@ -176,3 +176,6 @@
 
 ## 45 カラーボタン
 ![45](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/45.png)
+
+## 46 カラーセレクタダイアログ
+![46](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/46.png)
