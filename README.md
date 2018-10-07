@@ -179,3 +179,6 @@
 
 ## 46 カラーセレクタダイアログ
 ![46](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/46.png)
+
+## 47 ファイル選択ダイアログ
+![47](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/47.png)
