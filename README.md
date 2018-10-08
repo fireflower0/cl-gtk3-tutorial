@@ -185,3 +185,6 @@
 
 ## 48 フォント選択ダイアログ
 ![48](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/48.png)
+
+## 49 矢印付きボタン
+![49](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/49.png)
