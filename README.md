@@ -182,3 +182,6 @@
 
 ## 47 ファイル選択ダイアログ
 ![47](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/47.png)
+
+## 48 フォント選択ダイアログ
+![48](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/48.png)
