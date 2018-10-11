@@ -194,3 +194,6 @@
 
 ## 51 イベントボックス
 ![51](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/51.png)
+
+## 52 テキスト入力
+![52](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/52.png)
