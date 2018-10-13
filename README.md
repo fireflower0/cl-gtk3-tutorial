@@ -197,3 +197,6 @@
 
 ## 52 テキスト入力
 ![52](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/52.png)
+
+## 53 スピンボタン
+![53](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/53.png)
