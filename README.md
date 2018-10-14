@@ -200,3 +200,6 @@
 
 ## 53 スピンボタン
 ![53](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/53.png)
+
+## 54 コンボボックス
+![54](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/54.png)
