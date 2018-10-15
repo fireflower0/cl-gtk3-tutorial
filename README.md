@@ -206,3 +206,6 @@
 
 ## 55 コンボボックステキスト
 ![55](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/55.png)
+
+## 56 メニュー
+![56](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/56.png)
