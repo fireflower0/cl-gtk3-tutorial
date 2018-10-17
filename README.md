@@ -212,3 +212,6 @@
 
 ## 57 ポップアップメニューの作成
 ![57](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/57.png)
+
+## 58 ツールバー
+![58](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/58.png)
