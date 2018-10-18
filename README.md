@@ -215,3 +215,7 @@
 
 ## 58 ツールバー
 ![58](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/58.png)
+
+## 59 Demo Cairo Stroke
+
+![59](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/59.png)
