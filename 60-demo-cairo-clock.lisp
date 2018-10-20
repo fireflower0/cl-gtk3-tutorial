@@ -8,6 +8,15 @@
          :accessor egg-clock-face-time))
   (:metaclass gobject:gobject-class))
 
+(defmethod initialize-instance :after
+    ((clock egg-clock-face) &key &allow-other-keys)
+  (glib:g-timeout-add 1000
+                      (lambda ()
+                        (setf (egg-clock-face-time clock)
+                              (multiple-value-list (get-decoded-time)))
+                        (gtk:gtk-widget-queue-draw clock)
+                        glib:+g-source-continue+)))
+
 (defun main ()
   (gtk:within-main-loop
     (let ((window (make-instance 'gtk:gtk-window
@@ -21,7 +30,6 @@
                                 (lambda (widget)
                                   (declare (ignore widget))
                                   (gtk:leave-gtk-main)))
-
 
       ;; ウィンドウにクロックを追加
       (gtk:gtk-container-add window clock)
