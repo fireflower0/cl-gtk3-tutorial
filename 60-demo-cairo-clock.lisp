@@ -34,7 +34,26 @@
                                   (cairo:cairo-fill-preserve cr)
                                   (cairo:cairo-set-source-rgb cr 0 0 0)
                                   (cairo:cairo-stroke cr)
-                                  ;; 時計針
+                                  ;; 時分刻み
+                                  (let ((inset 0.0)
+                                        (angle 0.0))
+                                    (dotimes (i 12)
+                                      (cairo:cairo-save cr)
+                                      (setf angle (/ (* i pi) 6))
+                                      (if (eql 0 (mod i 3))
+                                          (setf inset (* 0.2 radius))
+                                          (progn
+                                            (setf inset (* 0.1 radius))
+                                            (cairo:cairo-set-line-width cr
+                                                                        (* 0.5 (cairo:cairo-get-line-width cr)))))
+                                      (cairo:cairo-move-to cr
+                                                           (+ x (* (- radius inset) (cos angle)))
+                                                           (+ y (* (- radius inset) (sin angle))))
+                                      (cairo:cairo-line-to cr
+                                                           (+ x (* radius (cos angle)))
+                                                           (+ y (* radius (sin angle))))
+                                      (cairo:cairo-stroke cr)
+                                      (cairo:cairo-restore cr)))
                                   )))))
 
 (defun main ()
