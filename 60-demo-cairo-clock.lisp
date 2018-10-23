@@ -54,6 +54,25 @@
                                                            (+ y (* radius (sin angle))))
                                       (cairo:cairo-stroke cr)
                                       (cairo:cairo-restore cr)))
+                                  ;; 時計の針
+                                  (let ((seconds (first  (egg-clock-face-time clock)))
+                                        (minutes (second (egg-clock-face-time clock)))
+                                        (hours   (third  (egg-clock-face-time clock))))
+                                    ;; 時針は1時間に30度（π/ 6r）回転します
+                                    ;; + 1/2度（π/ 360r）/分
+                                    (let ((hours-angle   (* (/ pi 6) hours))
+                                          (minutes-angle (* (/ pi 360) minutes)))
+                                      (cairo:cairo-save cr)
+                                      (cairo:cairo-set-line-width cr (* 2.5 (cairo:cairo-get-line-width cr)))
+                                      (cairo:cairo-move-to cr x y)
+                                      (cairo:cairo-line-to cr
+                                                           (+ x (* (/ radius 2)
+                                                                   (sin (+ hours-angle minutes-angle))))
+                                                           (+ y (* (/ radius 2)
+                                                                   (- (cos (+ hours-angle minutes-angle))))))
+                                      (cairo:cairo-stroke cr)
+                                      (cairo:cairo-restore cr))
+                                    )
                                   )))))
 
 (defun main ()
