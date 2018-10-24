@@ -72,6 +72,13 @@
                                                                    (- (cos (+ hours-angle minutes-angle))))))
                                       (cairo:cairo-stroke cr)
                                       (cairo:cairo-restore cr))
+                                    ;; 分針は毎分6度（π/ 30r）回転します
+                                    (let ((angle (* (/ pi 30) minutes)))
+                                      (cairo:cairo-move-to cr x y)
+                                      (cairo:cairo-line-to cr
+                                                           (+ x (* radius 0.75 (sin angle)))
+                                                           (+ y (* radius 0.75 (- (cos angle)))))
+                                      (cairo:cairo-stroke cr))
                                     )
                                   )))))
 
