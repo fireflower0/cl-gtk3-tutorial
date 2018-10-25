@@ -219,3 +219,7 @@
 ## 59 Demo Cairo Stroke
 
 ![59](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/59.png)
+
+## 60 Demo Cairo Clock
+
+![60](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/60.png)
