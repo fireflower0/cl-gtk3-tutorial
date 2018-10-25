@@ -79,8 +79,18 @@
                                                            (+ x (* radius 0.75 (sin angle)))
                                                            (+ y (* radius 0.75 (- (cos angle)))))
                                       (cairo:cairo-stroke cr))
-                                    )
-                                  )))))
+                                    ;; 秒針：分針と同じように動作します
+                                    (let ((angle (* (/ pi 30) seconds)))
+                                      (cairo:cairo-save cr)
+                                      (cairo:cairo-set-source-rgb cr 1 0 0)
+                                      (cairo:cairo-move-to cr x y)
+                                      (cairo:cairo-line-to cr
+                                                           (+ x (* radius 0.7 (sin angle)))
+                                                           (+ y (* radius 0.7 (- (cos angle)))))
+                                      (cairo:cairo-stroke cr)
+                                      (cairo:cairo-restore cr))))
+                                ;; Cairoコンテキスト破棄
+                                t))))
 
 (defun main ()
   (gtk:within-main-loop
