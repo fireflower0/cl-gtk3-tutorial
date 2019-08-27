@@ -1,7 +1,9 @@
 ;; 01 シンプルウィンドウ
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/01-simple-window
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/01-simple-window)
 
 ;; メイン関数
 (defun main ()
