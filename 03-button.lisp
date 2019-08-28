@@ -1,7 +1,9 @@
 ;; 03 ボタン付きプログラム
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/03-button
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/03-button)
 
 ;; メイン関数
 (defun main ()
@@ -41,6 +43,3 @@
       (gtk:gtk-container-add window button)
       ;; 全てのウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

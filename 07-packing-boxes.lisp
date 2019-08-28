@@ -1,7 +1,9 @@
 ;; 07 パッキングボックス
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/07-packing-boxes
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/07-packing-boxes)
 
 ;; 複数のボタンを含む水平ボックスを作成
 ;; :expand  tの場合、ボックスは割当てられた領域を満たすように拡張される
@@ -141,7 +143,3 @@
 
       ;; 全てのウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-;; 引数値は、ボタンの間隔
-(main 20)

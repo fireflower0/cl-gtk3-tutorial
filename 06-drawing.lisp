@@ -1,7 +1,9 @@
 ;; 06 お絵かき
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/06-drawing
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/06-drawing)
 
 ;; メイン関数
 (defun main ()
@@ -104,6 +106,3 @@
      
      ;; 全てのウィジェット表示
      (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

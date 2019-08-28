@@ -1,7 +1,9 @@
 ;; 10 グリッドを使用したパッキング
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/10-grid-packing
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/10-grid-packing)
 
 ;; 
 (defun make-grid (homogeneous spacing expand align margin)
@@ -104,6 +106,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main 20)
