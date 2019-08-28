@@ -19,6 +19,3 @@
                                   (gtk:leave-gtk-main)))
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
