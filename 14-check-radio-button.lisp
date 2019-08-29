@@ -1,7 +1,9 @@
 ;; 14 チェックボタンとラジオボタン
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/14-check-radio-button
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/14-check-radio-button)
 
 ;; メイン関数
 (defun main ()
@@ -80,6 +82,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

@@ -1,7 +1,9 @@
 ;; 13 ボタンを作成するその他の例
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/13-normal-buttons2
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/13-normal-buttons2)
 
 ;; メイン関数
 (defun main ()
@@ -64,6 +66,3 @@
       (gtk:gtk-container-add window hbox)
       
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

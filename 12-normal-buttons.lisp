@@ -1,7 +1,9 @@
 ;; 12 画像とラベルが付いたボタン
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/12-normal-buttons
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/12-normal-buttons)
 
 (defun image-label-box (filename text)
   (let ((box   (make-instance 'gtk:gtk-box
@@ -33,6 +35,3 @@
       (gtk:gtk-container-add window button)
       
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

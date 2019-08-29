@@ -110,21 +110,41 @@ $ ros install
 
 ### 11 グリッドを使用したパッキング2
 
+```
+(cl-gtk3-tutorial:start :id 11)
+```
+
 ![11](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/11.png)
 
 ### 12 画像とラベルが付いたボタン
+
+```
+(cl-gtk3-tutorial:start :id 12)
+```
 
 ![12](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/12.png)
 
 ### 13 ボタンを作成するその他の例
 
+```
+(cl-gtk3-tutorial:start :id 13)
+```
+
 ![13](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/13.png)
 
 ### 14 チェックボタンとラジオボタン
 
+```
+(cl-gtk3-tutorial:start :id 14)
+```
+
 ![14](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/14.png)
 
 ### 15 リンクボタン
+
+```
+(cl-gtk3-tutorial:start :id 15)
+```
 
 ![15](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/15.png)
 
