@@ -1,6 +1,9 @@
 ;; 60 Demo Cairo Clock
 
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/60-demo-cairo-clock
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/60-demo-cairo-clock)
 
 (defclass egg-clock-face (gtk:gtk-drawing-area)
   ((time :initarg  :time
@@ -111,6 +114,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
