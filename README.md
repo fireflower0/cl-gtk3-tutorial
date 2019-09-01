@@ -150,9 +150,17 @@ $ ros install
 
 ### 16 スイッチ
 
+```
+(cl-gtk3-tutorial:start :id 16)
+```
+
 ![16](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/16.png)
 
 ### 17 色んなラベル
+
+```
+(cl-gtk3-tutorial:start :id 17)
+```
 
 ![17](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/17.png)
 
