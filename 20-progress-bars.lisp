@@ -1,7 +1,9 @@
 ;; 20 プログレスバー
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/20-progress-bars
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/20-progress-bars)
 
 (defstruct pbar-data
   pbar
@@ -92,6 +94,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

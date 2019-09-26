@@ -166,13 +166,25 @@ $ ros install
 
 ### 18 色んなラベル2
 
+```
+(cl-gtk3-tutorial:start :id 18)
+```
+
 ![18](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/18.png)
 
 ### 19 色んな画像
 
+```
+(cl-gtk3-tutorial:start :id 19)
+```
+
 ![19](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/19.png)
 
 ### 20 プログレスバー
+
+```
+(cl-gtk3-tutorial:start :id 20)
+```
 
 ![20](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/20.png)
 
