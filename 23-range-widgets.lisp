@@ -1,7 +1,9 @@
 ;; 23 範囲ウィジェット
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/23-range-widgets
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/23-range-widgets)
 
 ;; メイン関数
 (defun main ()
@@ -85,19 +87,20 @@
                                   :homogeneous nil
                                   :spacing 12
                                   :border-width 12))
-            (combo (make-instance 'gtk:gtk-combo-box-text)))
+            (combo (make-instance 'gtk:gtk-combo-box-text))
+            (iter  (make-instance 'gtk:gtk-tree-iter)))
         (gtk:gtk-combo-box-text-append-text combo "TOP")
         (gtk:gtk-combo-box-text-append-text combo "BOTTOM")
         (gtk:gtk-combo-box-text-append-text combo "LEFT")
         (gtk:gtk-combo-box-text-append-text combo "RIGHT")
-        (gtk:gtk-combo-box-set-active combo 0)
+        (gtk:gtk-combo-box-set-active-iter combo iter)
         (gobject:g-signal-connect combo "changed"
                                   (lambda (widget)
                                     (let ((pos (gtk:gtk-combo-box-text-get-active-text widget)))
                                       (format t "type      : ~A~%"
                                               (gobject:g-type-from-instance (gobject:pointer widget)))
                                       (format t "active is : ~A~%"
-                                              (gtk:gtk-combo-box-get-active widget))
+                                              (gtk:gtk-combo-box-get-active-iter widget))
                                       (setq pos (if pos (intern pos :keyword) :top))
                                       (setf (gtk:gtk-scale-value-pos hscale) pos)
                                       (setf (gtk:gtk-scale-value-pos vscale) pos))))
@@ -187,6 +190,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

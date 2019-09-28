@@ -206,6 +206,10 @@ $ ros install
 
 ### 23 範囲ウィジェット
 
+```
+(cl-gtk3-tutorial:start :id 23)
+```
+
 ![23](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/23.png)
 
 ### 24 アライメントウィジェット
