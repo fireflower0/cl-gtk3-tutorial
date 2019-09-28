@@ -190,9 +190,17 @@ $ ros install
 
 ### 21 ステータスバー
 
+```
+(cl-gtk3-tutorial:start :id 21)
+```
+
 ![21](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/21.png)
 
 ### 22 情報バー
+
+```
+(cl-gtk3-tutorial:start :id 22)
+```
 
 ![22](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/22.png)
 

@@ -1,7 +1,9 @@
 ;; 21 ステータスバー
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/21-statusbars
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/21-statusbars)
 
 ;; メイン関数
 (defun main ()
@@ -49,6 +51,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

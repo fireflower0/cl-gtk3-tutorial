@@ -1,7 +1,9 @@
 ;; 22 情報バー
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/22-info-bars
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/22-info-bars)
 
 ;; メイン関数
 (defun main ()
@@ -55,6 +57,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
