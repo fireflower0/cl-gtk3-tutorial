@@ -214,9 +214,17 @@ $ ros install
 
 ### 24 アライメントウィジェット
 
+```
+(cl-gtk3-tutorial:start :id 24)
+```
+
 ![24](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/24.png)
 
 ### 25 固定コンテナ
+
+```
+(cl-gtk3-tutorial:start :id 25)
+```
 
 ![25](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/25.png)
 
