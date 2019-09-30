@@ -1,7 +1,9 @@
 ;; 30 ボタンボックス
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/30-button-boxes
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/30-button-boxes)
 
 (defun create-bbox (orientation title spacing layout)
   (let ((frame (make-instance 'gtk:gtk-frame
@@ -123,6 +125,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
