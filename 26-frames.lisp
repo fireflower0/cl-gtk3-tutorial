@@ -1,7 +1,9 @@
 ;; 26 フレーム
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/26-frames
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/26-frames)
 
 ;; メイン関数
 (defun main ()
@@ -28,6 +30,3 @@
 
      ;; ウィジェット表示
      (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
