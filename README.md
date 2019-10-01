@@ -238,21 +238,41 @@ $ ros install
 
 ### 27 アスペクトフレームコンテナ
 
+```
+(cl-gtk3-tutorial:start :id 27)
+```
+
 ![27](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/27.png)
 
 ### 28 パンウィンドウウィジェット
+
+```
+(cl-gtk3-tutorial:start :id 28)
+```
 
 ![28](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/28.png)
 
 ### 29 スクロールウィンドウ
 
+```
+(cl-gtk3-tutorial:start :id 29)
+```
+
 ![29](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/29.png)
 
 ### 30 ボタンボックス
 
+```
+(cl-gtk3-tutorial:start :id 30)
+```
+
 ![30](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/30.png)
 
 ### 31 ノートブック
+
+```
+(cl-gtk3-tutorial:start :id 31)
+```
 
 ![31](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/31.png)
 

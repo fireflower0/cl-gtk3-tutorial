@@ -1,7 +1,9 @@
 ;; 31 ノートブック
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/31-notebook
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/31-notebook)
 
 (defun main ()
   (gtk:within-main-loop
@@ -50,6 +52,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
