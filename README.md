@@ -278,6 +278,10 @@ $ ros install
 
 ### 32 シンプルな複数行のテキストウィジェット
 
+```
+(cl-gtk3-tutorial:start :id 32)
+```
+
 ![32](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/32.png)
 
 ### 33 テキストビューのテキスト属性の変更
