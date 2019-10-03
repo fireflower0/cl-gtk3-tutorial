@@ -1,7 +1,9 @@
 ;; 32 シンプルな複数行のテキストウィジェット
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/32-multiline-text-widget
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/32-multiline-text-widget)
 
 (defun main ()
   (gtk:within-main-loop
@@ -18,11 +20,8 @@
                                   (declare (ignore widget))
                                   (gtk:leave-gtk-main)))
 
-      (gtk:gtk-text-buffer-set-text buffer "Hello, world!")
+      (gtk:gtk-text-buffer-insert buffer "Hello, world!")
       (gtk:gtk-container-add window view)
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
