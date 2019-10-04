@@ -286,6 +286,10 @@ $ ros install
 
 ### 33 テキストビューのテキスト属性の変更
 
+```
+(cl-gtk3-tutorial:start :id 33)
+```
+
 ![33](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/33.png)
 
 ### 34 タグの適用
