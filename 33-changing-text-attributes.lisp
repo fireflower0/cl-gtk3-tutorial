@@ -1,7 +1,9 @@
 ;; 33 テキストビューのテキスト属性の変更
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/33-changing-text-attributes
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/33-changing-text-attributes)
 
 (defun main ()
   (gtk:within-main-loop
@@ -18,7 +20,7 @@
                                   (declare (ignore widget))
                                   (gtk:leave-gtk-main)))
 
-      (gtk:gtk-text-buffer-set-text buffer "Hello, world!")
+      (gtk:gtk-text-buffer-insert buffer "Hello, world!")
 
       ;; ウィジェット全体のデフォルトフォントを変更する
       (gtk:gtk-widget-override-font view
@@ -38,7 +40,7 @@
             (start (gtk:gtk-text-buffer-get-iter-at-offset buffer 7))
             (end   (gtk:gtk-text-buffer-get-iter-at-offset buffer 12)))
         ;; バッファのタグテーブルにタグを追加する
-        (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-get-tag-table buffer) tag)
+        (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-tag-table buffer) tag)
         ;; バッファ内のテキストの領域にタグを適用する
         (gtk:gtk-text-buffer-apply-tag buffer tag start end))
 
@@ -47,6 +49,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
