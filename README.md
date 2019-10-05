@@ -294,6 +294,10 @@ $ ros install
 
 ### 34 タグの適用
 
+```
+(cl-gtk3-tutorial:start :id 34)
+```
+
 ![34](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/34.png)
 
 ### 35 テキストビューでテキストを検索
