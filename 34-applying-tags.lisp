@@ -1,7 +1,9 @@
 ;; 34 タグの適用
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/34-applying-tags
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/34-applying-tags)
 
 (defun on-button-clicked (buffer tag)
   (multiple-value-bind (start end)
@@ -32,18 +34,18 @@
 
       (gtk:gtk-container-add vbox bbox)
       (gtk:gtk-container-add vbox text-view)
-      (gtk:gtk-text-buffer-set-text buffer "Hello, world! Text view!")
+      (gtk:gtk-text-buffer-insert buffer "Hello, world! Text view!")
 
       ;; バッファに関連付けられたタグを作成
-      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-get-tag-table buffer)
+      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-tag-table buffer)
                                   (make-instance 'gtk:gtk-text-tag
                                                  :name "bold"
                                                  :width 700))
-      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-get-tag-table buffer)
+      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-tag-table buffer)
                                   (make-instance 'gtk:gtk-text-tag
                                                  :name "italic"
                                                  :style :italic))
-      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-get-tag-table buffer)
+      (gtk:gtk-text-tag-table-add (gtk:gtk-text-buffer-tag-table buffer)
                                   (make-instance 'gtk:gtk-text-tag
                                                  :name "font"
                                                  :font "fixed"))
@@ -85,6 +87,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
