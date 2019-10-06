@@ -1,7 +1,9 @@
 ;; 35 テキストビューでテキストを検索
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/35-searching-text
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/35-searching-text)
 
 (defvar *some-text* "こんにちは、世界！")
 
@@ -43,7 +45,7 @@
                                      (when found
                                        (gtk:gtk-text-buffer-select-range buffer start end))))))
 
-     (gtk:gtk-text-buffer-set-text (gtk:gtk-text-view-buffer text-view) *some-text*)
+     (gtk:gtk-text-buffer-insert (gtk:gtk-text-view-buffer text-view) *some-text*)
      
      (gtk:gtk-container-add scrolled text-view)
      (gtk:gtk-container-add hbox entry)
@@ -56,6 +58,3 @@
 
      ;; ウィジェット表示
      (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
