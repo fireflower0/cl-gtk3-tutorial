@@ -302,6 +302,10 @@ $ ros install
 
 ### 35 テキストビューでテキストを検索
 
+```
+(cl-gtk3-tutorial:start :id 35)
+```
+
 ![35](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/35.png)
 
 ### 36 テキストビューでテキストを検索2
