@@ -1,7 +1,9 @@
 ;; 37 テキストの読み込みと変更
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/37-examing-modify-text
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/37-examing-modify-text)
 
 (defun main ()
   (gtk:within-main-loop
@@ -35,8 +37,8 @@
                                     (gtk:gtk-text-iter-forward-to-line-end iter)
                                     (gtk:gtk-text-buffer-insert buffer "</li>" :position iter))))
       
-      (gtk:gtk-text-buffer-set-text (gtk:gtk-text-view-buffer text-view)
-                                    (format nil "Item 1~%Item 2~%Item 3~%"))
+      (gtk:gtk-text-buffer-insert (gtk:gtk-text-view-buffer text-view)
+                                  (format nil "Item 1~%Item 2~%Item 3~%"))
       
       (gtk:gtk-container-add vbox text-view)
       (gtk:gtk-container-add vbox button)
@@ -46,6 +48,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
