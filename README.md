@@ -318,6 +318,10 @@ $ ros install
 
 ### 37 テキストの読み込みと変更
 
+```
+(cl-gtk3-tutorial:start :id 37)
+```
+
 ![37](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/37.png)
 
 ### 38 テキストの読み込みと変更2
