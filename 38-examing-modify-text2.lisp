@@ -1,7 +1,9 @@
 ;; 38 テキストの読み込みと変更2
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/38-examing-modify-text2
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/38-examing-modify-text2)
 
 (defun get-this-tag (iter buffer)
   (let* ((start-tag (gtk:gtk-text-iter-copy iter))
@@ -59,9 +61,9 @@
                                                                             (format nil "</~a>" tag))
                                                 (return)))))))))
       
-      (gtk:gtk-text-buffer-set-text (gtk:gtk-text-view-buffer text-view)
-                                    (format nil
-                                            "<html>~%~
+      (gtk:gtk-text-buffer-insert (gtk:gtk-text-view-buffer text-view)
+                                  (format nil
+                                          "<html>~%~
                                          <head><title>Title</title></head>~%~
                                          <body>~%~
                                          <h1>Heading</h1>~%"))
@@ -74,6 +76,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
