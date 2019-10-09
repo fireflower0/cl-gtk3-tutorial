@@ -326,6 +326,10 @@ $ ros install
 
 ### 38 テキストの読み込みと変更2
 
+```
+(cl-gtk3-tutorial:start :id 38)
+```
+
 ![38](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/38.png)
 
 ### 39 画像挿入
