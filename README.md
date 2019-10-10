@@ -334,6 +334,10 @@ $ ros install
 
 ### 39 画像挿入
 
+```
+(cl-gtk3-tutorial:start :id 39)
+```
+
 ![39](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/39.png)
 
 ### 40 ウィジェット挿入
