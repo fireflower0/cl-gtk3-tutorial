@@ -342,6 +342,10 @@ $ ros install
 
 ### 40 ウィジェット挿入
 
+```
+(cl-gtk3-tutorial:start :id 40)
+```
+
 ![40](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/40.png)
 
 ### 41 ツールチップをテキストビューで表示
