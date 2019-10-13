@@ -350,9 +350,17 @@ $ ros install
 
 ### 41 ツールチップをテキストビューで表示
 
+```
+(cl-gtk3-tutorial:start :id 41)
+```
+
 ![41](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/41.png)
 
 ### 42 ツリービュー
+
+```
+(cl-gtk3-tutorial:start :id 42)
+```
 
 ![42](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/42.png)
 
