@@ -1,7 +1,9 @@
 ;; 42 ツリービュー
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/42-tree-view
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/42-tree-view)
 
 (defun create-and-fill-model ()
   (let ((model (make-instance 'gtk:gtk-list-store
@@ -53,6 +55,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
