@@ -366,6 +366,10 @@ $ ros install
 
 ### 43 永続的なセルレンダラーのプロパティ
 
+```
+(cl-gtk3-tutorial:start :id 43)
+```
+
 ![43](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/43.png)
 
 ### 44 ダイアログ
