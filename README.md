@@ -374,6 +374,10 @@ $ ros install
 
 ### 44 ダイアログ
 
+```
+(cl-gtk3-tutorial:start :id 44)
+```
+
 ![44](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/44.png)
 
 ### 45 カラーボタン
