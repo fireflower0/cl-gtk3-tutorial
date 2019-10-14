@@ -1,7 +1,9 @@
 ;; 44 ダイアログ
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/44-about-dialog
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/44-about-dialog)
 
 (defun license-text ()
   (format nil
@@ -161,6 +163,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
