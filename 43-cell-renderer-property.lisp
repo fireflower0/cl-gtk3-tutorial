@@ -1,7 +1,9 @@
 ;; 43 永続的なセルレンダラーのプロパティ
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/43-cell-renderer-property
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/43-cell-renderer-property)
 
 (defun create-and-fill-model ()
   (let ((model (make-instance 'gtk:gtk-tree-store
@@ -41,7 +43,7 @@
       ;; セルレンダラーをツリービュー列にパックする
       (gtk:gtk-tree-view-column-pack-start column renderer))
     ;; 選択不可
-    (gtk:gtk-tree-selection-set-mode (gtk:gtk-tree-view-get-selection view) :none)
+    (gtk:gtk-tree-selection-mode (gtk:gtk-tree-view-get-selection view))
     view))
 
 (defun main ()
@@ -64,6 +66,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
