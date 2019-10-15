@@ -1,7 +1,9 @@
 ;; 45 カラーボタン
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/45-color-button
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/45-color-button)
 
 (defvar *color* (gdk:gdk-rgba-parse "Gray"))
 
@@ -23,7 +25,7 @@
 
       (gobject:g-signal-connect button "color-set"
                                 (lambda (widget)
-                                  (let ((rgba (gtk:gtk-color-chooser-get-rgba widget)))
+                                  (let ((rgba (gtk:gtk-color-chooser-rgba widget)))
                                     (format t "Selected color is ~A~%"
                                             (gdk:gdk-rgba-to-string rgba)))))
       
@@ -31,6 +33,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
