@@ -382,6 +382,10 @@ $ ros install
 
 ### 45 カラーボタン
 
+```
+(cl-gtk3-tutorial:start :id 45)
+```
+
 ![45](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/45.png)
 
 ### 46 カラーセレクタダイアログ
