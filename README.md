@@ -390,6 +390,10 @@ $ ros install
 
 ### 46 カラーセレクタダイアログ
 
+```
+(cl-gtk3-tutorial:start :id 46)
+```
+
 ![46](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/46.png)
 
 ### 47 ファイル選択ダイアログ
