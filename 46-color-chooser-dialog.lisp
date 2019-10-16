@@ -1,7 +1,9 @@
 ;; 46 カラーセレクタダイアログ
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/46-color-chooser-dialog
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/46-color-chooser-dialog)
 
 (defparameter *color* (gdk:gdk-rgba-parse "Blue"))
 
@@ -34,7 +36,7 @@
         ;; カラーチューザダイアログを実行する
         (let ((response (gtk:gtk-dialog-run dialog)))
           (when (eql response :ok)
-            (setq *color* (gtk:gtk-color-chooser-get-rgba dialog)))
+            (setq *color* (gtk:gtk-color-chooser-rgba dialog)))
           ;; エリアウィジェットの色を設定する
           (gtk:gtk-widget-override-background-color area :normal *color*)
           ;; カラーチューザーダイアログを破棄する
@@ -65,7 +67,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
-
