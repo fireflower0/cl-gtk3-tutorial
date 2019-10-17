@@ -398,6 +398,10 @@ $ ros install
 
 ### 47 ファイル選択ダイアログ
 
+```
+(cl-gtk3-tutorial:start :id 47)
+```
+
 ![47](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/47.png)
 
 ### 48 フォント選択ダイアログ
