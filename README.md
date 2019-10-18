@@ -406,6 +406,10 @@ $ ros install
 
 ### 48 フォント選択ダイアログ
 
+```
+(cl-gtk3-tutorial:start :id 48)
+```
+
 ![48](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/48.png)
 
 ### 49 矢印付きボタン
