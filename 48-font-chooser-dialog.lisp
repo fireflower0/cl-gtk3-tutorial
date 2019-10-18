@@ -1,7 +1,9 @@
 ;; 48 フォント選択ダイアログ
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/48-font-chooser-dialog
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/48-font-chooser-dialog)
 
 (defun font-filter (family face)
   (declare (ignore face))
@@ -32,7 +34,7 @@
                                   (declare (ignore widget))
                                   (format t "Font is set:~%")
                                   (format t "   Font name   : ~A~%"
-                                          (gtk:gtk-font-chooser-get-font button))
+                                          (gtk:gtk-font-chooser-font button))
                                   (format t "   Font family : ~A~%"
                                           (pango:pango-font-family-get-name
                                            (gtk:gtk-font-chooser-get-font-family button)))
@@ -47,6 +49,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
