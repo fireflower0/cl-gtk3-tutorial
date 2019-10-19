@@ -414,6 +414,10 @@ $ ros install
 
 ### 49 矢印付きボタン
 
+```
+(cl-gtk3-tutorial:start :id 49)
+```
+
 ![49](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/49.png)
 
 ### 50 カレンダー

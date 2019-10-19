@@ -1,7 +1,9 @@
 ;; 49 矢印付きボタン
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/49-buttons-with-arrows
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/49-buttons-with-arrows)
 
 (defun create-arrow-button (arrow-type shadow-type)
   (let (;; ボタンを作成する
@@ -55,6 +57,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
