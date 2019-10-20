@@ -422,6 +422,10 @@ $ ros install
 
 ### 50 カレンダー
 
+```
+(cl-gtk3-tutorial:start :id 50)
+```
+
 ![50](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/50.png)
 
 ### 51 イベントボックス
