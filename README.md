@@ -430,6 +430,10 @@ $ ros install
 
 ### 51 イベントボックス
 
+```
+(cl-gtk3-tutorial:start :id 51)
+```
+
 ![51](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/51.png)
 
 ### 52 テキスト入力
