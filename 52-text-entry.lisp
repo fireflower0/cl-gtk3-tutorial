@@ -1,7 +1,9 @@
 ;; 52 テキスト入力
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/52-text-entry
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/52-text-entry)
 
 (defun main ()
   (gtk:within-main-loop
@@ -64,6 +66,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
