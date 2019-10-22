@@ -438,6 +438,10 @@ $ ros install
 
 ### 52 テキスト入力
 
+```
+(cl-gtk3-tutorial:start :id 52)
+```
+
 ![52](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/52.png)
 
 ### 53 スピンボタン
