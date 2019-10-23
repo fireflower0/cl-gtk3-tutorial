@@ -1,7 +1,9 @@
 ;; 53 スピンボタン
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/53-spin-buttons
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/53-spin-buttons)
 
 (defun main ()
   (gtk:within-main-loop
@@ -230,6 +232,3 @@
       
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)

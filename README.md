@@ -446,6 +446,10 @@ $ ros install
 
 ### 53 スピンボタン
 
+```
+(cl-gtk3-tutorial:start :id 53)
+```
+
 ![53](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/53.png)
 
 ### 54 コンボボックス
