@@ -453,6 +453,11 @@ $ ros install
 ![53](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/53.png)
 
 ### 54 コンボボックス
+
+```
+(cl-gtk3-tutorial:start :id 54)
+```
+
 ![54](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/54.png)
 
 ### 55 コンボボックステキスト
