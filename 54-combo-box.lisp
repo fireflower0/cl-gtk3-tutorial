@@ -1,7 +1,9 @@
 ;; 54 コンボボックス
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
+(defpackage #:cl-gtk3-tutorial/54-combo-box
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/54-combo-box)
 
 (defun main ()
   (gtk:within-main-loop
@@ -35,7 +37,7 @@
       (gtk:gtk-list-store-set model (gtk:gtk-list-store-append model) "Sunday"    7)
 
       ;; 最初のエントリをアクティブに設定する
-      (gtk:gtk-combo-box-set-active combo-box 0)
+      (gtk:gtk-combo-box-active combo-box)
 
       ;; シグナルハンドラを定義する
       (gobject:g-signal-connect window "destroy"
@@ -63,7 +65,7 @@
                                                  :info
                                                  :close
                                                  "You selected row ~A"
-                                                 (gtk:gtk-combo-box-get-active combo-box))))
+                                                 (gtk:gtk-combo-box-active combo-box))))
                                     (gtk:gtk-dialog-run dialog)
                                     (gtk:gtk-widget-destroy dialog))))
 
@@ -95,6 +97,3 @@
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
