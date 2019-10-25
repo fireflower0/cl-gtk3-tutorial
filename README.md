@@ -462,24 +462,48 @@ $ ros install
 
 ### 55 コンボボックステキスト
 
+```
+(cl-gtk3-tutorial:start :id 55)
+```
+
 ![55](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/55.png)
 
 ### 56 メニュー
+
+```
+(cl-gtk3-tutorial:start :id 56)
+```
 
 ![56](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/56.png)
 
 ### 57 ポップアップメニューの作成
 
+```
+(cl-gtk3-tutorial:start :id 57)
+```
+
 ![57](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/57.png)
 
 ### 58 ツールバー
+
+```
+(cl-gtk3-tutorial:start :id 58)
+```
 
 ![58](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/58.png)
 
 ### 59 Demo Cairo Stroke
 
+```
+(cl-gtk3-tutorial:start :id 59)
+```
+
 ![59](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/59.png)
 
 ### 60 Demo Cairo Clock
+
+```
+(cl-gtk3-tutorial:start :id 60)
+```
 
 ![60](https://github.com/fireflower0/cl-gtk3-tutorial/blob/master/img/60.png)
