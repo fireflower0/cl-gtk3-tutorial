@@ -1,8 +1,9 @@
 ;; 55 コンボボックステキスト
 
-;; ライブラリロード
-(ql:quickload :cl-cffi-gtk)
-
+(defpackage #:cl-gtk3-tutorial/55-combo-box-text
+  (:use #:cl)
+  (:export #:main))
+(in-package #:cl-gtk3-tutorial/55-combo-box-text)
 
 (defun main ()
   (gtk:within-main-loop
@@ -15,13 +16,10 @@
       (gtk:gtk-combo-box-text-append-text combo "First entry")
       (gtk:gtk-combo-box-text-append-text combo "Second entry")
       (gtk:gtk-combo-box-text-append-text combo "Third entry")
-      (gtk:gtk-combo-box-set-active combo 0)
+      (gtk:gtk-combo-box-active combo)
 
       ;; コンボボックスをウィンドウに入れる
       (gtk:gtk-container-add window combo)
 
       ;; ウィジェット表示
       (gtk:gtk-widget-show-all window))))
-
-;; main関数を呼び出して実行
-(main)
